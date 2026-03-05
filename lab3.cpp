@@ -80,6 +80,11 @@ int main() {
     int x;
     cout << "Please enter a number between 3 and 9: ";
     cin >> x;
+    while (x<3 || x>9) {
+        cout << "Invalid input." << endl;
+        cout << "Please enter a number between 3 and 9: ";
+        cin >> x;
+    }
 
     for (int i = 1; i < 2 * x; i++) {
         int k = x - abs(x - i);
